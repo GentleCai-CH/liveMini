@@ -1,0 +1,21 @@
+<!--components/charroom/chatroom.wxml-->
+<wxs src="./chatroom.wxs" module="getTargetID"></wxs>
+<scroll-view scroll-y="{{true}}" scroll-into-view="{{getTargetID(message)}}" scroll-with-animation="{{true}}">
+  <view wx:for="{{message}}" wx:key="id" id="{{item.id}}">
+    <view wx:if="{{item.type===1}}" class="msg-item">
+      <!-- 头像 -->
+      <image src="/images/level-1.png" />
+      <!-- 名字 -->
+      <text class="name">{{item.name}} : </text>
+      <!-- msg -->
+      <text class="text">{{item.message}}</text>
+    </view>
+
+    <view wx:else class="msg-item">
+        <!-- 名字 -->
+        <text class="name">{{item.name}} : </text>
+        <!-- 消息 -->
+        <text class="text">{{item.message}}</text>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,13 @@
+function messageQueen(message){
+    var queenLen = 100
+    // console.log(message.length)
+    if(message.length>queenLen){
+      var length = message.length-queenLen
+      for(var i =0;i < length;i++){
+        message.shift()
+      }
+    }
+    return message
+}
+
+module.exports = messageQueen

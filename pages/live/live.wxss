@@ -1,0 +1,36 @@
+/* pages/live/live.wxss */
+
+.roombg{
+  /* background-color: black; */
+  color:white;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+}
+.chatroom{
+  position: fixed;
+  bottom: 120px;
+  /* background:white; */
+  width: 50vw;
+  height: 30vh;
+  left:0;
+  z-index:200;
+  overflow: hidden;
+}
+
+.roombottom{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100vw;
+  height: 100rpx;
+}
+
+.room-live{
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   top:0;
+   left:0;
+}

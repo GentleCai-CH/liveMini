@@ -1,0 +1,20 @@
+<mp-half-screen-dialog 
+  show="{{isShowGoodList}}"
+  maskClosable="{{false}}" 
+
+  title="上架商品"
+>
+  <view slot="desc" class="gooddesc">
+
+    <view wx:for="{{goodList}}" wx:key="index" class="item">
+      <image src="/images/goods-item.png" class="good-item"></image>
+
+      <view class="detail">
+        <view>{{item.name}}</view>
+        <view class="price">￥ {{item.price}}</view>
+      </view>
+
+      <image src="/images/cart.png" class="cart" bindtap="handleCart" data-item="{{item}}"/>
+    </view>
+  </view>
+</mp-half-screen-dialog>

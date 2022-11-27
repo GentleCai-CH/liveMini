@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "live-item":"../../components/liveitem/liveitem"
+  },
+  "enablePullDownRefresh": true
+}

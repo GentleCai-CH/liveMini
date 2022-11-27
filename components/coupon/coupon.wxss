@@ -1,0 +1,47 @@
+/* components/coupon/coupon.wxss */
+
+.coupon{
+  position: fixed;
+  right: 120rpx;
+  top:25vh;
+  width: 555rpx;
+  height: 313rpx;
+}
+.coupon image.bg{
+  width: 555rpx;
+  height: 313rpx;
+}
+.coupon .info{
+  position: absolute;
+  top:20px;
+  left:0px;
+  width: 100%;
+  text-align: center;
+}
+
+.coupon .info .title{
+  font-size: 14px;
+}
+
+.coupon .info .desc{
+  font-size: 18px;
+}
+
+.coupon .info .btn{
+  width: 300rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  padding:0;
+  font-size: 14px;
+  line-height: 60rpx;
+  margin-top:50rpx;
+  color:#f16161;
+}
+
+.coupon .close{
+  position: absolute;
+  right: 20rpx;
+  top:20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}

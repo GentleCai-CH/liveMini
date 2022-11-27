@@ -1,0 +1,33 @@
+/* components/goodlist/goodlist.wxss */
+
+/* components/introduction/introduction.wxss */
+
+.gooddesc .item{
+  padding:20rpx;
+  border-top: 1px solid lightgray;
+  position: relative;
+  overflow: hidden;
+}
+
+.gooddesc .detail {
+  font-size: 16px;
+}
+
+.gooddesc .detail .price{
+  margin-top:20rpx;
+  color:#EE4E4E;
+}
+
+.gooddesc .good-item{
+  width: 140rpx;
+  height: 140rpx;
+  float:left;
+}
+
+.gooddesc .cart{
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  right: 24rpx;
+  bottom: 28rpx;
+}

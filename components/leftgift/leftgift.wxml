@@ -1,0 +1,11 @@
+<!--components/leftgift/leftgift.wxml-->
+<view class="giftcontainer">
+  <image src="{{giftitem.userAvatar}}"  class="avatar"/>
+
+  <view class="info">
+      <view>{{giftitem.userNick}}</view>
+      <view>送出{{giftitem.giftName}}X1</view>
+  </view>
+
+  <image src="{{giftitem.giftUrl}}" class="gifturl" mode="widthFix"></image>
+</view>

@@ -1,0 +1,44 @@
+<!--components/usercard/user-card.wxml-->
+<mp-half-screen-dialog 
+  show="{{true}}"
+  maskClosable="{{false}}" 
+
+  bindclose="handleClose"
+>
+  <view slot="title">
+    <image src="{{ownerInfo.avatar}}" class="avatar"/>
+  </view>
+  <view slot="desc">
+    <view>
+      <view  class="info">
+        {{ownerInfo.nick}}
+        <image src="/images/level-1.png"/>
+      </view>
+      <view class="addr">
+        <image src="/images/position.png" class="position"/>
+        {{ownerInfo.addr || "保密"}}
+      </view>
+    </view>
+
+    <view class="count">
+       <view class="item">
+          <view class="value">{{currentUser.fans}}</view>
+          <view >粉丝数</view>
+        </view>
+       <view class="item">
+        <view class="value">{{currentUser.gift}}</view>
+          <view >礼物数</view>
+       </view>
+       <view class="item">
+        <view class="value">{{currentUser.like}}</view>
+          <view >点赞数</view>
+       </view>
+    </view>
+
+    <view class="buttons">
+      <view class="button active" wx:if="{{isFollowed}}" bindtap="handleUnfollow">+取消关注</view>
+      <view class="button active" wx:else  bindtap="handleFollow">+点击关注</view>
+      <view class="button">主页</view>
+    </view>
+  </view>
+</mp-half-screen-dialog>

@@ -1,0 +1,29 @@
+/* components/charroom/chatroom.wxss */
+scroll-view{
+  max-height: 30vh;
+  width: 55vw;
+}
+
+.msg-item{
+  padding: 15rpx 20rpx;
+  font-size: 12px;
+  margin-bottom: 12rpx;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50rpx;
+}
+
+.msg-item image{
+  width: 50rpx;
+  height: 30rpx;
+  /* height: 50rpx; */
+}
+
+.msg-item .name{
+  font-size: 14px;
+  color:#9fe5ff;
+}
+
+.text{
+  word-wrap: break-word;
+}

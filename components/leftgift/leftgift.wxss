@@ -1,0 +1,26 @@
+/* components/leftgift/leftgift.wxss */
+
+.giftcontainer{
+  position: fixed;
+  left: 10rpx;
+  top:30vh;
+  width: 50vw;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  /* background:white; */
+}
+
+.avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.info{
+  font-size: 12px;
+}
+
+.gifturl{
+  width: 100rpx;
+}

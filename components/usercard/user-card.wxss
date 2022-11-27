@@ -1,0 +1,65 @@
+/* components/usercard/user-card.wxss */
+
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.info{
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+}
+.info image{
+  width: 60rpx;
+  height: 34rpx;
+}
+
+.addr{
+  font-size: 12px;
+  text-align: center;
+  margin-top:15rpx;
+  color:gray;
+}
+
+.addr image{
+  width: 24rpx;
+  height: 30rpx;
+}
+
+.count{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  margin-top:20rpx;
+  font-size: 12px;
+  color:gray;
+}
+
+.count .item{
+  flex:1;
+  text-align:center;
+}
+
+.item .value{
+  font-size: 16px;
+  font-weight: bold;
+  color:black;
+}
+
+.buttons{
+  display: flex;
+  margin-top: 50rpx;
+  border-top:1px solid lightgray;
+  padding:15rpx;
+}
+
+.buttons .button{
+  flex:1;
+  text-align: center;
+}
+
+.active{
+  color:lightskyblue;
+}

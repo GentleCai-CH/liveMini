@@ -1,0 +1,25 @@
+.logo{
+  text-align: center;
+  padding-top:120rpx;
+}
+
+.logo-img{
+    width: 505rpx;
+    height: 424rpx;
+}
+.slogan{
+  font-size: 18px;
+  color:#333333;
+  text-align: center;
+  line-height: 50rpx;
+  margin-top: 60rpx;
+}
+
+.sub-slogan{
+    font-size: 14px;
+    color:#999999;
+    text-align: center;
+    line-height: 40rpx;
+    margin-top:40rpx;
+    margin-bottom: 120rpx;
+}

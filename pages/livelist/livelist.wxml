@@ -1,0 +1,13 @@
+<!--pages/livelist/livelist.wxml-->
+<view class="title">直播广场</view>
+
+
+<live-item wx:for="{{roomList}}" wx:key="id" item="{{item}}" bindevent="handleEvent"> </live-item> 
+
+
+<!-- 底部直播按钮 -->
+
+<view class="livebutton">
+  <image src="/images/live.png" mode="widthFix" bindtap="handleLive"/>
+  <view>点我，立即开播</view>
+</view>

@@ -1,0 +1,42 @@
+<!--pages/live/live.wxml-->
+<wxs src="./live.wxs" module="messageQueen"></wxs>
+<view class="roombg">
+    <room-header ownerInfo="{{ownerInfo}}" groupInfo="{{groupInfo}}" isFollowed="{{isFollowed}}" bindfollow="handleFollow" bindshowusercard="handleShowUserCard" bindintroductionshow="handleShowIntroduction" bindonlineshow="handleShowOnline"
+    
+    bindcoupon="handleShowCoupon"></room-header>
+
+    <chatroom class="chatroom" message="{{messageQueen(message)}}"></chatroom>
+  
+    <room-bottom class="roombottom" isTimReady="{{isTimReady}}" bindsend="handleSend" bindback="handleBack" bindlike="handleLike" bindshowgift="handleShowGift" bindshowgoodlist="handleShowGoodList"></room-bottom>
+
+    <!-- 礼物列表 -->
+    <room-gift gifts="{{gifts}}" isGiftShow="{{isGiftShow}}" bindsendgift="handleSendGift"></room-gift>
+
+    <left-gift wx:if="{{isLeftGiftShow}}" bindhideleftgift="handleHideLeftGift" giftitem="{{giftitem}}"></left-gift>
+
+    <!-- 用户卡片 -->
+
+    <user-card wx:if="{{isUserCardShow}}" bindclose="handleClose" userID="{{userInfo.userID}}" ownerID="{{groupInfo.ownerID}}" ownerInfo="{{ownerInfo}}" isFollowed="{{isFollowed}}" bindfollow="handleFollow" ></user-card>
+
+
+    <!-- 群简介 -->
+
+    <introduction introduction="{{groupInfo.notification}}" isIntroductionShow="{{isIntroductionShow}}"></introduction>
+
+    <online-user wx:if="{{isOnLineShow}}" bindhideonline="handleHideOnline" groupInfo="{{groupInfo}}"></online-user>
+
+    <coupon wx:if="{{isShowCoupon}}" bindhidecoupon="handleHideCoupon" bindusecoupon="handleUseCoupon"></coupon>
+
+    <good-list isShowGoodList="{{isShowGoodList}}" goodList="{{goodList}}" bindbuy="handleBuyGood"></good-list>
+</view>
+
+
+<view class="room-live">
+    <!-- <live-player></live-player> -->
+    <!-- <live-pusher></live-pusher> -->
+
+    <live-pusher wx:if="{{groupInfo.ownerID===userInfo.userID}}" url="{{room_push_link}}" mode="RTC" autopush bindstatechange="pushstatechange" style="width: 100vw; height: 100vh;" beauty="9" whiteness="9"/>
+
+    <live-player wx:else src="{{room_play_link}}" mode="RTC" autoplay bindstatechange="playstatechange" binderror="error" style="width: 100vw; height: 100vh" object-fit="fillCrop"  id="player"/>
+
+</view>

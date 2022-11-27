@@ -1,0 +1,12 @@
+<!--components/liveitem/liveitem.wxml-->
+<view class="item" bindtap="handleTap">
+    <view class="container">
+        <image src="{{item.room_cover}}" mode="widthFix"></image>
+        <view wx:if="{{item.room_status===0}}" class="status">未开通</view>
+        <view wx:elif="{{item.room_status===1}}" class="status">未直播</view>
+        <view wx:else class="status">直播中
+          <text class="greendot"></text>
+        </view>
+    </view>
+    <view>{{item.room_name}}</view>
+</view> 

@@ -1,0 +1,15 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "room-header":"../../components/roomheader/roomheader",
+    "room-bottom":"../../components/roombottom/roombottom",
+    "chatroom":"../../components/chatroom/chatroom",
+    "room-gift":"../../components/roomgift/roomgift",
+    "left-gift":"../../components/leftgift/leftgift",
+    "user-card":"../../components/usercard/user-card",
+    "introduction":"../../components/introduction/introduction",
+    "online-user":"../../components/online/onlineuser",
+    "coupon":"../../components/coupon/coupon",
+    "good-list":"../../components/goodlist/goodlist"
+  }
+}

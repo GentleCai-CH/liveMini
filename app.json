@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/livelist/livelist",
+    "pages/live/live",
+    "pages/login/login",
+    "pages/home/home"
+  ],  
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "锋巢直播带货 IM",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

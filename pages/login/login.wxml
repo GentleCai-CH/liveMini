@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view>
+   <view class="logo">
+      <image src="/images/logo.png" class="logo-img"/>
+   </view> 
+
+   <view class="slogan">
+      锋巢直播带货 IM
+   </view>
+
+   <view class="sub-slogan">
+     体验直播发起，发送直播弹幕，送礼，点赞，购买等直播电商功能
+   </view>
+
+   <view>
+      <button type="primary" bindtap="handleLogin">登录</button>
+   </view>
+</view>

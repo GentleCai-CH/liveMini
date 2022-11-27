@@ -1,0 +1,43 @@
+/* components/liveitem/liveitem.wxss */
+
+.item{
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  float:left;
+  text-align: center;
+}
+
+image{
+  width: 200rpx;
+  border-radius: 50%;
+}
+
+.item view {
+  /* color:gray; */
+}
+
+.container{
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container .status{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color:white;
+}
+.container .greendot{
+  width: 20rpx;
+  height: 20rpx;
+  display: inline-block;
+  background-color: rgb(24, 245, 24);
+  border-radius: 50%;
+}

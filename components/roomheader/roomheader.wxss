@@ -1,0 +1,64 @@
+/* components/roomheader/roomheader.wxss */
+.info-container{
+  padding: 100rpx 20rpx;
+}
+
+.owner-info{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 80rpx;
+}
+.owner-info::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.owner-info image{
+  width: 80rpx;
+  border-radius: 50%;
+  float:left;
+}
+
+.owner-info .info{
+  float:left;
+  padding-left: 20rpx;
+  font-size: 13px;
+}
+
+.owner-info .attention{
+  width: 100rpx;
+  height: 60rpx;
+  background-color: #fff;
+  font-size: 12px;
+  color:#ff5353;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  margin-left:30px;
+  margin-top:10rpx;
+}
+
+.roomidinfo {
+  float: left;
+  margin-top:10px;
+  font-size:10px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20rpx;
+  word-wrap: break-word;
+}
+
+.online{
+  float: right;
+  margin-top: 10px;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20rpx;
+}
+
+.red-pack{
+  clear: both;
+  float: right;
+  width: 80rpx;
+}

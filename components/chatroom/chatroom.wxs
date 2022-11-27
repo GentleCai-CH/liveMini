@@ -1,0 +1,8 @@
+function getTargetID(message){
+  if(message.length){
+    return message[message.length-1].id
+  }
+  return ""
+}
+
+module.exports =  getTargetID

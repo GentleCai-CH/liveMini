@@ -1,0 +1,15 @@
+<!--components/roomgift/roomgift.wxml-->
+
+<mp-half-screen-dialog 
+  show="{{isGiftShow}}"
+  maskClosable="{{false}}" 
+  title="发送礼物" 
+  subTitle=""
+
+>
+  <view slot="desc">
+    <view class="giftitem" wx:for="{{gifts}}" bindtap="handleTap" data-myid="{{item}}" wx:key="index">
+       <image src="{{item.url}}" mode="widthFix"></image>
+    </view>
+  </view>
+</mp-half-screen-dialog>

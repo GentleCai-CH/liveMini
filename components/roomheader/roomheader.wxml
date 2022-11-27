@@ -1,0 +1,23 @@
+<!--components/roomheader/roomheader.wxml-->
+<view class="info-container">
+  <view class="owner-info">
+    <image src="{{ownerInfo.avatar}}" mode="widthFix" bindtap="handleShowCard"/>
+    <view class="info" bindtap="handleShowCard">
+        <view>{{ownerInfo.nick}}</view>
+        <view>{{ownerInfo.fans}}粉丝</view>
+    </view>
+
+    <button class="attention" wx:if="{{isFollowed}}" bindtap="handleUnFollow">已关注</button>
+    <button class="attention" wx:else bindtap="handleFollow">关注</button>
+  </view>
+
+  <view class="roomidinfo" bindtap="handleintroductionshow">
+     直播间ID：{{groupInfo.groupID}}
+  </view>
+
+  <view class="online" bindtap="handleOnline">
+    {{groupInfo.memberCount}}人在看
+  </view>
+
+  <image src="/images/red-pack.png" mode="widthFix" class="red-pack" bindtap="handleCoupon"/>
+</view>

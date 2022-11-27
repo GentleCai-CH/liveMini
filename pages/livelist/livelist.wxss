@@ -1,0 +1,34 @@
+/* pages/livelist/livelist.wxss */
+
+.title{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.livebutton{
+  position: fixed;
+  width: 100%;
+  left:0;
+  bottom: 0;
+  text-align: center;
+}
+
+.livebutton image{
+  width: 150rpx;
+  animation: myanimation .5s infinite alternate;
+}
+
+.livebutton view{
+  color:gray;
+  font-size: 14px;
+}
+
+@keyframes myanimation {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}

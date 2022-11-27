@@ -1,0 +1,12 @@
+<!--components/coupon/coupon.wxml-->
+<view class="coupon">
+  <image src="/images/coupon.png" class="bg"></image>
+
+  <view class="info">
+      <view class="title">优惠券来袭</view>
+      <view class="desc">平台送你一张优惠券</view>
+      <button class="btn" bindtap="usecoupon">马上使用</button>
+  </view>
+
+  <image src="/images/close-w.png" class="close" bindtap="handleClose"></image>
+</view>

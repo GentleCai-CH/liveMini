@@ -1,0 +1,11 @@
+<!--components/introduction/introduction.wxml-->
+<!-- <text>{{introduction}}</text> -->
+
+<mp-half-screen-dialog 
+  show="{{isIntroductionShow}}"
+  maskClosable="{{false}}" 
+
+  title="直播间简介"
+>
+  <view slot="desc">{{introduction}}</view>
+</mp-half-screen-dialog>

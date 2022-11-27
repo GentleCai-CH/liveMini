@@ -1,0 +1,20 @@
+<!--components/roombottom/roombottom.wxml-->
+<view class="bottom">
+  <view class="item">
+    <image src="/images/goods.png" alt="" mode="widthFix" bindtap="handleshowgoodlist"/>
+  </view>
+  <view class="chatinput">
+    <input placeholder="{{isTimReady?'我想问主播...':'初始化中,请稍等'}}" bindconfirm="handleConfirm" confirm-type="send" value="{{value}}" placeholder-style="color:white;font-size: 12px;"/>
+  </view>
+  <view class="item">
+    <image src="/images/gift.png" mode="widthFix" bindtap="handleGift"></image>
+  </view>
+  <view class="item">
+    <!-- <image src="/images/like.png" mode="widthFix"></image> -->
+    <view class="animation {{isAnimation?'start':''}}" bindtap="handleAnimation"></view>
+  </view>
+  <view class="item">
+    <image src="/images/back.png" mode="widthFix" bindtap="handleBack">
+    </image>
+  </view>
+</view>

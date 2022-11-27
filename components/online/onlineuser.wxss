@@ -1,0 +1,52 @@
+/* components/online/onlineuser.wxss */
+
+.title{
+  display: flex;
+
+}
+.title view{ 
+  flex:1;
+  text-align: center;
+  font-weight: lighter;
+  color:gray;
+}
+.title view.active{
+  color:black;
+  font-weight: bold;
+}
+
+.online .avatar{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.online .level{
+  width: 54rpx;
+  height: 32rpx;
+  margin-right: 10px;
+}
+
+.online {
+  display: flex;
+  justify-content: flex-start;
+  height: 80rpx;
+  align-items: center;
+  width: 100%;
+}
+
+.giftpic{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 10px;
+}
+
+.giftnick{
+  color:gray;
+  font-size: 12px;
+}
+
+.onlinedesc scroll-view {
+  height: 30vh;
+  width: 100%;
+}
